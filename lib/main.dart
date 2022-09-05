@@ -104,8 +104,6 @@ class _MyHomePageState extends State<MyHomePage> {
       _userTransactions.removeWhere((tx) => tx.id == id);
     });
   }
-
-//hello
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
