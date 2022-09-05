@@ -111,6 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final isLandscape = mediaQuery.orientation == Orientation.landscape;
     final dynamic appBar = Platform.isIOS
         ? CupertinoNavigationBar(
+            leading: Align(alignment: Alignment.center),
             middle: Text(
               'Personal Expenses',
               style: TextStyle(fontFamily: 'Open Sans'),
@@ -125,8 +126,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           )
         : AppBar(
-            title: Text('Personal Expenses',
-                style: TextStyle(fontFamily: 'Open Sans')),
+            centerTitle: true,
+            title: Text(
+              'Personal Expenses',
+              style: TextStyle(fontFamily: 'Open Sans'),
+            ),
             backgroundColor: Theme.of(context).primaryColor,
             actions: <Widget>[
               IconButton(
