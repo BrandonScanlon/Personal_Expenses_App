@@ -1,5 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter/cupertino.dart';
+import '../widgets/adaptive_flat_button.dart';
 
 class NewTransaction extends StatefulWidget {
   final Function addTx;
@@ -65,6 +69,9 @@ class _NewTransactionState extends State<NewTransaction> {
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
+                CupertinoTextField(
+                  autocorrect: true,
+                ),
                 TextField(
                   autocorrect: true,
                   autofocus: true,
@@ -92,13 +99,7 @@ class _NewTransactionState extends State<NewTransaction> {
                               : 'Selected Date: ${DateFormat.yMd().format(_selectedDate!)}',
                         ),
                       ),
-                      TextButton(
-                        child: Text('Choose Date',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            )),
-                        onPressed: _presentDatePicker,
-                      )
+                      AdaptiveFlatButton("Choose Date", _presentDatePicker)
                     ],
                   ),
                 ),
