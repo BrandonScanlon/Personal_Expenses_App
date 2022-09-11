@@ -1,16 +1,8 @@
-# shop_app
+# <div align="center"> <ins><strong>SHOP APP - Flutter</strong></ins> </div>
+### This mobile application uses the convenience and flexibility of the Flutter framework with Dart to track various meals, their recipes, and other details pertaining to each meal.
 
-A new Flutter project.
+## <div align="center"><ins>Home Screen:</ins>                    <ins>Drawer:</ins>                            <ins>Filters:</ins></div>
+<div align="center">    <img src = "" width="250" height="450"/>  <img src = "" width="250" height="450"/>  <img src ="" width="250" height="450"/> </div>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## <div align="center"><ins>Category View:</ins>                     <ins>Recipe:</ins>                          <ins>Favorites:</ins></div>
+<div align="center">    <img src = "" width="250" height="450"/>  <img src = "" width="250" height="450"/>  <img src = "" width="250" height="450"/> </div>
